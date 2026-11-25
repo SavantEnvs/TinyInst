@@ -1,0 +1,15 @@
+path: /System/Library/dyld/dyld_shared_cache_arm64e
+mapping  EX 0x180000000 -> 0x1A0000000
+
+/usr/lib/libobjc.A.dylib
+      __TEXT 0x180004000 -> 0x180038000
+      __DATA_CONST 0x1D0000000 -> 0x1D0004000
+
+/usr/lib/libalpha.dylib
+      __TEXT 0x180038000 -> 0x180039100
+
+/usr/lib/libbeta.dylib
+      __TEXT 0x180039100 -> 0x18003C000
+
+/usr/lib/system/libgamma.dylib
+      __TEXT 0x18003C000 -> 0x180040000

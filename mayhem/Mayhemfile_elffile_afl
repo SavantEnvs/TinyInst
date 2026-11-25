@@ -1,0 +1,11 @@
+project: savantenvs/TinyInst
+target: elffile-afl
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/elffile-afl/testsuite
+
+cmds:
+  - cmd: /mayhem/elffile_afl @@
+    afl: true
+    timeout: 5

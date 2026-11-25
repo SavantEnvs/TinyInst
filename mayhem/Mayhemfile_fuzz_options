@@ -1,0 +1,11 @@
+project: savantenvs/TinyInst
+target: fuzz-options
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-options/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_options
+    libfuzzer: true
+    timeout: 5

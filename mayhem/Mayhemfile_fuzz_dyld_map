@@ -1,0 +1,11 @@
+project: savantenvs/TinyInst
+target: fuzz-dyld-map
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-dyld-map/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_dyld_map
+    libfuzzer: true
+    timeout: 5

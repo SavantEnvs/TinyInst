@@ -1,0 +1,11 @@
+project: savantenvs/TinyInst
+target: fuzz-procmaps
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-procmaps/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_procmaps
+    libfuzzer: true
+    timeout: 5

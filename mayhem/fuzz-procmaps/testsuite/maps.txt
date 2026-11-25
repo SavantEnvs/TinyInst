@@ -1,0 +1,4 @@
+55e4c1a00000-55e4c1a02000 r--p 00000000 08:01 1234   /usr/bin/cat
+7ffd1c3e0000-7ffd1c401000 rw-p 00000000 00:00 0      [stack]
+7f00 r-xp 0 00:00 0 /tmp/name with spaces
+	ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0
